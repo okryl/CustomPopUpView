@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="31O-Yn-khQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ar5-lq-5X4">
+            <objects>
+                <navigationController id="31O-Yn-khQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5P1-rB-azP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J8e-mQ-xGg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcS-nh-jd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="37"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomPopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HF-UD-Ydi">
+                                <state key="normal" title="Second View"/>
+                                <connections>
+                                    <segue destination="i64-jH-3Ls" kind="push" id="oSp-Xt-2Mm"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-Gm-7p0">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YmF-Gm-7p0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2g9-FY-lQk"/>
+                            <constraint firstItem="0HF-UD-Ydi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LxZ-Ib-ajO"/>
+                            <constraint firstItem="0HF-UD-Ydi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mcp-ok-lcb"/>
+                            <constraint firstItem="YmF-Gm-7p0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VHx-bY-Tl8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YmF-Gm-7p0" secondAttribute="bottom" constant="20" id="Z8e-k6-m6L"/>
+                            <constraint firstItem="YmF-Gm-7p0" firstAttribute="top" secondItem="0HF-UD-Ydi" secondAttribute="bottom" constant="65.5" id="dZQ-jn-F2g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ut-gh-bCn">
+                        <barButtonItem key="rightBarButtonItem" title="PopUp" id="pxt-b3-2n8">
+                            <connections>
+                                <action selector="openPopUpView:" destination="BYZ-38-t0r" id="0jN-KB-wWO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="RXi-XF-8dj">
+            <objects>
+                <viewController id="i64-jH-3Ls" customClass="SecondViewController" customModule="CustomPopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S5c-US-kBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="V1C-jl-bNv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bHL-CR-wZ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="OYo-u9-1WG"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OYo-u9-1WG" firstAttribute="leading" secondItem="bHL-CR-wZ7" secondAttribute="leadingMargin" constant="-16" id="Ut0-uI-C33"/>
+                            <constraint firstItem="V1C-jl-bNv" firstAttribute="top" secondItem="OYo-u9-1WG" secondAttribute="bottom" id="eFh-cc-SgR"/>
+                            <constraint firstItem="OYo-u9-1WG" firstAttribute="top" secondItem="S5c-US-kBy" secondAttribute="bottom" id="pIP-Y9-5Gr"/>
+                            <constraint firstItem="OYo-u9-1WG" firstAttribute="trailing" secondItem="bHL-CR-wZ7" secondAttribute="trailingMargin" constant="16" id="uTg-uU-D8c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="juJ-G5-y58">
+                        <barButtonItem key="rightBarButtonItem" title="PopUpView Blur Effect" id="nsA-gj-Hgc">
+                            <connections>
+                                <action selector="openPopUpViewWithBlurEffect:" destination="i64-jH-3Ls" id="D8Y-FL-lag"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="OYo-u9-1WG" id="9cD-4k-CU9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6O-ww-X86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="39.130434782608695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sea" width="183" height="275"/>
+    </resources>
+</document>
