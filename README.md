@@ -1,4 +1,4 @@
 # CustomPopUp
 CustomPopUpView with Swift
 
-![Alt text](/Users/tmob/Desktop/Resim1.png "Screnn Shot")
+![Alt text](http://i.hizliresim.com/vXQ37A.png "Screnn Shot")
